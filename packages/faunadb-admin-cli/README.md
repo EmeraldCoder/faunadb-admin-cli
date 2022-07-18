@@ -49,7 +49,7 @@ export async function upgrade (client) {
 }
 ```
 
-Example Reference: [Migrations Folder](https://github.com/EmeraldCoder/faunadb-admin-cli/blob/main/example/migrations)
+Example Reference: [Migrations Folder](https://github.com/EmeraldCoder/faunadb-admin-cli/blob/master/example/migrations)
 
 ### Backup
 
@@ -82,7 +82,7 @@ The output file is structure like this:
 ]
 ```
 
-Example Reference: [Backup File](https://github.com/EmeraldCoder/faunadb-admin-cli/blob/main/example/backups/star-wars-backup.json)
+Example Reference: [Backup File](https://github.com/EmeraldCoder/faunadb-admin-cli/blob/master/example/backups/star-wars-backup.json)
 
 
 ### Restore
@@ -123,4 +123,4 @@ faunadb-admin-cli backup --output ./backup.json --secret [TOKEN] --domain localh
 
 ## License
 
-[MIT](https://github.com/EmeraldCoder/faunadb-admin-cli/blob/main/LICENSE)
+[MIT](https://github.com/EmeraldCoder/faunadb-admin-cli/blob/master/LICENSE)
