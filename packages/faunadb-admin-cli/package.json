@@ -1,0 +1,38 @@
+{
+  "name": "@emeraldcoder/faunadb-admin-cli",
+  "version": "0.0.1",
+  "type": "module",
+  "bin": {
+    "faunadb-admin-cli": "./src/cli.js"
+  },
+  "license": "MIT",
+  "description": "CLI for basic administration tasks for FaunaDB",
+  "author": "EmeraldCoder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmeraldCoder/faunadb-admin-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EmeraldCoder/faunadb-admin-cli/issues"
+  },
+  "homepage": "https://github.com/EmeraldCoder/faunadb-admin-cli",
+  "keywords": [
+    "faunadb",
+    "cli"
+  ],
+  "files": ["/src"],
+  "scripts": {
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "dependencies": {
+    "commander": "^9.0.0"
+  },
+  "devDependencies": {
+    "clean-package": "^2.0.0",
+    "faunadb": "^4.0.0"
+  },
+  "peerDependencies": {
+    "faunadb": "4"
+  }
+}

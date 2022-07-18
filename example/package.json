@@ -1,0 +1,14 @@
+{
+  "name": "@workspace/example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "upgrade:database": "faunadb-admin-cli upgrade --input=./migrations",
+    "restore:star-wars": "faunadb-admin-cli restore --input=./backups/star-wars-backup.json",
+    "backup": "faunadb-admin-cli backup --output=./backup.json"
+  },
+  "dependencies": {
+    "@emeraldcoder/faunadb-admin-cli": "latest",
+    "faunadb": "^4.0.0"
+  }
+}

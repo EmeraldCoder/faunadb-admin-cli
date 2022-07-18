@@ -1,0 +1,26 @@
+[
+  {
+    "collectionId": "Movies",
+    "document": {
+      "id": "sw-new-hope",
+      "title": "A New Hope"
+    }
+  },
+
+  {
+    "collectionId": "Characters",
+    "document": {
+      "id": "sw-luke-skywalker",
+      "firstname": "Luke",
+      "lastname": "Skywalker"
+    }
+  },
+  {
+    "collectionId": "Characters",
+    "document": {
+      "id": "sw-han-solo",
+      "firstname": "Han",
+      "lastname": "Solo"
+    }
+  }
+]

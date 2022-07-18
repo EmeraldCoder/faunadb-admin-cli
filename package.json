@@ -1,0 +1,13 @@
+{
+  "name": "@workspace/root",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start:faunadb-dev": "docker run --rm -p 8443:8443 fauna/faunadb",
+    "test": "vitest run -r ./tests"
+  },
+  "devDependencies": {
+    "faunadb": "^4.0.0",
+    "vitest": "^0.16.0"
+  }
+}
