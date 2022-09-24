@@ -8,17 +8,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-      packages: write
-
     steps:
       - uses: actions/checkout@v3
 
       - uses: actions/setup-node@v1
         with:
           node-version: 16.x
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: 'https://registry.npmjs.org'
           scope: '@emeraldcoder'
 
       - uses: pnpm/action-setup@v2.2.2
@@ -43,6 +39,6 @@ jobs:
         run: pnpm install
 
       - name: Publish
-        run: pnpm publish -r --no-git-checks
+        run: pnpm publish -r --no-git-checks --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
