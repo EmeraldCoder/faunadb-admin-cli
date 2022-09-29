@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Command } from 'commander'
 import backupCommand from './commands/backup.js'
 import upgradeCommand from './commands/upgrade.js'
