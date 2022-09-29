@@ -39,7 +39,7 @@ Upgrade a database schemas to the latest version using migration scripts.
 faunadb-admin-cli upgrade --input ./migrations --secret [TOKEN]
 ```
 
-The input option should be a directory containing the migrations script. All script should expose a version number and an upgrade function (accepting the FaunaDB client as parameter).
+The input option should be a directory containing the migration scripts. All scripts should expose a version number and an upgrade function (accepting the FaunaDB client as parameter).
 
 ```js
 export const version = 1
@@ -65,7 +65,7 @@ faunadb-admin-cli backup --output ./backup.json --collections Users Posts Commen
 
 The output file is structure like this:
 
-```json
+```javascript
 [
   {
     "collectionId": "Users",
